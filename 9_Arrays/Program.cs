@@ -19,6 +19,12 @@ namespace _9_Arrays
                 Console.WriteLine($"This is {friendNames[i]}");
 
             }
+
+            Console.WriteLine("Or with for each string friendname in friendNames, but with foreach it's read-only");
+            foreach(string friendname in friendNames)
+            {
+                Console.WriteLine($"{friendname}");
+            }
             Console.ReadKey();
         }
     }
